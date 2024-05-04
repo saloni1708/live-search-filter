@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f8f9fa;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.top-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+#input-box {
+  width: 87%;
+  transition: all 0.5s ease-in-out;
+}
+
+.scrolled {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  background-color: white;
+  padding: 1rem;
+}
+
+.scrolled h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.scrolled #input-box {
+  width: auto;
+  display: flex;
+  flex-grow: 1;
+}
+
+#box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
